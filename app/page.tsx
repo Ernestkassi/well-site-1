@@ -2244,7 +2244,7 @@ const MegaFooter = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2026 NEXUS Global. All rights reserved.
+            © 2026 WELL Global. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-gray-500">
             <span className="flex items-center gap-2">
