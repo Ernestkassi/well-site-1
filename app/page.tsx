@@ -346,7 +346,6 @@ const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
-// ==================== LANGUAGE PROVIDER ====================
 const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
@@ -355,7 +354,6 @@ const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     setMounted(true);
-    // Check for saved language preference
     const savedLang = localStorage.getItem("language") || "en";
     setLanguageState(savedLang);
   }, []);
@@ -374,7 +372,6 @@ const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
     return value || key;
   };
 
-  // Prevent hydration mismatch
   if (!mounted) {
     return <div className="min-h-screen bg-black" />;
   }
